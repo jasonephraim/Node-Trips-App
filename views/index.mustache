@@ -1,0 +1,56 @@
+
+<html>
+<head>
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+<div class="container">
+    <nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand" href="#">Trips</a>
+</nav>
+</div>
+<div class="jumbotron jumbotron-fluid">
+<div class="container">
+<form>
+  <div class="form-group">
+    <label for="destinationInput">Destination</label>
+    <input type="text" class="form-control" id="destinationInput" aria-describedby="destinationInputHelp">
+    <small id="destinationInputHelp" class="form-text text-muted">Please enter your destination city</small>
+  </div>
+  <div class="form-group">
+  <div class="row">
+    <div class="col">
+    <label for="departureDateInput">Departure Date</label>
+    <input type="date" class="form-control" id="departureDateInput">
+    </div>
+    <div class="col">
+    <label for="returnDateInput">Return Date</label>
+    <input type="date" class="form-control" id="returnDateInput">
+  </div>
+  <div class="col">
+    <label for="imageInput">Upload a city image</label>
+    <input type="file" class="form-control-file" id="imageInput">
+    </div>
+  </div>
+  </div>
+  <div class="form-group">
+  <button type="submit" class="btn btn-primary">Submit</button>
+  </div>
+</form>
+
+</div>
+</div>
+
+<ul class="list-group">
+        <li
+          class="list-group-item d-flex justify-content-between align-items-center"
+        >
+          {{destinationInput}}
+        </li>
+      </ul>
+
+   
+</body>
+
+</html>
